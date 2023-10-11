@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+#back{
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    /* background-color: rgb(244, 8, 8); */
+}
+
+#back img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+
+
+#top{
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* background-color: rgb(184, 176, 176); */
+}
+#workingarea{
+    position: relative;
+    width: 80%;
+    max-width: 1920px; 
+    /* background-color:gray; */
+    height: 100vh;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    /* margin-bottom: 200px; */
+}
+#nav img{
+    height: 60px;
+}
+#nleft,#nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#nav a{
+    pointer-events: all;
+    color: #fff;
+    font-family: "gilroy";
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+}
+#hero{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    transform: translate(-0%, -50%);
+    top: 50%;
+    left: 0;
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+
+#lhero{
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: yellow; */
+}
+#lhero .elem{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#lhero .elem h1:nth-child(1){
+    top: 0;
+}
+
+#lhero .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+    line-height: .9;
+}
+
+#lhero button{
+    pointer-events: all;
+    cursor: pointer;
+    padding: .7vw 3vw;
+    font-size: 3vw;
+    margin-top: 1vw;
+    font-family: "kajiro";
+    /* font-weight: 200PX; */
+}
+#hright{
+    width: 20%;
+    /* height: 100px; */
+    /* background-color: rgb(40, 240, 26); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+#hright p{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+#hright #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+    background-size: cover;
+    background-position: center;
+}
+#hright p:nth-child(3){
+    margin-bottom: 20px;
+}
